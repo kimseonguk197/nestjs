@@ -6,6 +6,7 @@ export const OrderSchema = new mongoose.Schema({
     {
       item: String,
       quantity: Number,
+      ingredients: [String],
     },
   ],
 });
@@ -15,5 +16,6 @@ export interface Order extends mongoose.Document {
   items: {
     item: string;
     quantity: number;
+    ingredients?: string[];
   }[];
 }
