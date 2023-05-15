@@ -7,6 +7,7 @@ import { BoardModule } from './board/board.module';
 import { AuthorModule } from './author/author.module';
 import { CatsModule } from './mongotest/cat.module';
 import { OrderModule } from './order/order.module';
+import { MenuModule } from './menu/menu.module';
 
 @Module({
   imports: [
@@ -25,6 +26,7 @@ import { OrderModule } from './order/order.module';
     AuthorModule,
     CatsModule,
     OrderModule,
+    MenuModule,
   ],
   controllers: [AppController],
   providers: [AppService],
