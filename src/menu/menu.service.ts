@@ -25,10 +25,6 @@ export class MenuService {
     return this.menuModel.find().exec();
   }
 
-  getImagePath(imagePath: string): string {
-    return path.join(imagePath); // 실제 이미지 URL로 변환
-  }
-
   async saveImage(image: Express.Multer.File): Promise<string> {
     const storagePath = path.join(__dirname, '../../images/menu_images');
     if (!fs.existsSync(storagePath)) {

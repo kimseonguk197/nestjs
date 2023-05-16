@@ -15,7 +15,3 @@ export class Menu {
 
 export type MenuDocument = Menu & Document;
 export const MenuSchema = SchemaFactory.createForClass(Menu);
-
-export interface MenuWithImagePath extends Menu {
-  imagePath: string;
-}
